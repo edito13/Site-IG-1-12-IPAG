@@ -1,0 +1,282 @@
+/*----------------Banner-----------------------*/
+.banner{
+    background: url('../img/Acessorios/IMG_0144.png')no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    transform: scale(1);
+    height: 70vh;
+    width: 100%;
+    margin-top: -1px;
+    position: absolute;
+    left: 0;
+}
+/*---------------1ª seção Breve-descrição---------------------*/
+
+.breve-desc{
+    margin-top: 455px;
+    margin-bottom: 100px;
+    padding: 20px;
+}
+
+.titulo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+.titulo h1,h3{
+    color: #333;
+    margin-bottom: 10px;
+}
+.breve-desc .conteudo{
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.breve-desc .conteudo .t-cont{
+    margin-left: -50px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.breve-desc .conteudo .t-cont img{
+    margin-right: 15px;
+}
+.breve-desc .conteudo .textos{
+    line-height: 33px;
+    max-width: 450px;
+    margin-left: 30px;
+}
+.breve-desc .conteudo .textos + .textos{
+    margin-left: 80px;
+}
+
+/*---------------2ª seção aprenda connosco------------*/
+
+.aprenda-connosco{
+    padding: 60px;
+    background: url("../img/Home/Trees-22.jpg")no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    transform: scale(1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+.aprenda-connosco > img{
+    max-height: 400px;
+    margin-right: 70px;
+}
+.aprenda-connosco h2{
+    color: #eee;
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.692);
+}
+.aprenda-connosco div ul{
+    margin-bottom: 30px;
+    list-style: none;
+}
+.aprenda-connosco div ul li{
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+}
+.aprenda-connosco div ul li img{
+    margin-right: 40px;
+}
+.aprenda-connosco ul li p{
+    color: #eee;
+    margin-left: -25px;
+}
+.aprenda-connosco div div{
+    display: flex;
+    align-items: center;
+}
+.aprenda-connosco div div a{
+    cursor: pointer;
+    padding: 10px;
+    border: none;
+    border: 1px solid #5EA5F8;
+    background: #5EA5F8;
+    border-radius: 4px;
+    margin-right: 50px;
+    transition: .5s ease-in-out;
+}
+.aprenda-connosco div div img{
+    background: #eee;
+    border-radius: 5px;
+    padding: 5px;
+    transition: .4s ease-in-out;
+}
+.aprenda-connosco div div a:hover{
+    background: rgb(23, 93, 245);
+    color: white;
+}
+.aprenda-connosco div div img:hover{
+    opacity: .7;
+    cursor: pointer;
+}
+
+/*---------------3ª seção Notícias recentes------------*/
+.news-now{
+    padding: 20px 0;
+    margin-top: 680px;
+    margin-bottom: 80px;
+}
+
+.news-now .noticias{
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.news-now .noticias figure{
+    height: 359px;
+}
+.news-now .noticias figure + figure{
+    margin-left: 25px;
+}
+.news-now .noticias figure img{
+    margin-bottom: 10px;
+}
+.news-now .noticias figure h3{
+    width: 270px;
+}
+.news-now .noticias figure p{
+    color: #5D523D;
+}
+.news-now span{
+    display: flex;
+    justify-content: center;
+}
+
+/*---------------------Session Comente--------------------------*/
+
+.comente-session{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    padding: 20px 0;
+}
+/* Título do comentário */
+.comente-session .titulo-comenta{
+    margin: 20px 0  5px;
+}
+/* A parte de preencher o comentário */
+.comente-session .comenta{
+    margin-top: -10px;
+}
+.comente-session .comenta form{
+    display: flex;
+    align-items: center;
+}
+.comente-session .comenta form .comenta-campo{
+    width: 100%;
+    max-width: 350px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 8px;
+    margin-right: 20px;
+}
+.comente-session .comenta form .comenta-campo label{
+    font-size: 1.2em;
+    color: #333;
+}
+.comente-session .comenta form .comenta-campo textarea{
+    width: 100%;
+    height: 65px;
+}
+/* A parte do comentário */
+.comente-session .div-comentario{
+    padding: 15px 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1px;
+    border-bottom: 1px solid #ccc;
+}
+.comente-session .div-comentario h4{
+    color: #333;
+    max-width: 500px;
+    margin-bottom: 4px;
+    display: flex;
+    justify-content: space-between;
+}
+.comente-session .div-comentario #comentario{
+    letter-spacing: 0.05em;
+    color: #eee;
+    max-width: 500px;
+    background: rgba(0, 0, 0, 0.692);
+    padding: 8px;
+    border-radius: 4px;
+    text-align: justify;
+    margin-bottom: 5px;
+}
+.comente-session .div-comentario #dados-comentario{
+    color: #4e4e4e;
+}
+.comente-session .div-comentario:last-child{
+    border: none;
+}
+/*---------------------Estilos do modal-------------------------*/
+
+#btn-logout{
+    border: none;
+    transition: all .5s ease-in-out;
+}
+#btn-logout:hover{
+    background: #fff;
+    color: #343a40;
+}
+/*--------------------------------------------------------------*/
+
+/*---------------------RESPONSIVIDADE---------------------*/
+@media(max-width: 1140px){
+    .comente-session{
+        padding: 20px 2% 20px;
+    }
+}
+@media(max-width: 800px){
+    .breve-desc{
+        padding: 0;
+    }
+    .breve-desc .conteudo{
+        flex-wrap: wrap;
+    }
+    .breve-desc .conteudo .textos{
+        max-width: 80%;
+        text-align: justify;
+    }
+    .breve-desc .conteudo .textos + .textos{
+        margin-left: 0;
+        margin-top: 40px;
+    }
+    .news-now{
+        margin-top: 1020px;
+        padding: 0;
+    }
+    .aprenda-connosco{
+        flex-direction: column;
+    }
+    .aprenda-connosco > img{
+        margin-bottom: 50px;
+    }
+}
+@media(max-width: 522px){
+    .comente-session .comenta form{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .comente-session .comenta form .comenta-campo{
+        margin-right: 0;
+        margin-bottom: 25px;
+    }
+}
+
+/*--------------------------------------------------------*/

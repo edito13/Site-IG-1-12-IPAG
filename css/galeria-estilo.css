@@ -1,0 +1,124 @@
+body{
+    overflow-x: hidden;
+}
+main .titulo-galeria h1{
+    margin: 40px 0 5px;
+    color: #333;
+}
+main .titulo-galeria h1 + p{
+    color: #544837;
+    margin-bottom: 40px;
+}
+.fotos{
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 80px;
+    margin-bottom: 60px;
+}
+.fotos div div{
+    box-shadow: 2px 2px 3px  rgba(0, 0, 0, 0.452);
+    border-radius: 4px;
+}
+/*------------------1ª linha----------------------------*/
+.fotos .first-row{
+    display: grid;
+    grid-template-columns: 1fr 350px;
+    grid-gap: 30px;
+}
+.fotos .first-row div{
+    transition: .4s ease-in-out;
+}
+.fotos .first-row div:hover{
+    transform: scale(1.04);
+}
+.fotos .first-row div:nth-child(1){
+    background: url('../img/Galeria/1.jpg')no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 380px;
+}
+.fotos .first-row div:nth-child(2){
+    background: url('../img/Galeria/2.jpg')no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 380px;
+}
+/*------------------Fim da 1ª linha----------------------------*/
+
+/*------------------2ª linha----------------------------*/
+.fotos .second-row{
+    display: grid;
+    grid-template-columns: 350px 1fr;
+    grid-gap: 30px;
+}
+.fotos .second-row div{
+    transition: .4s ease-in-out;
+}
+.fotos .second-row div:hover{
+    transform: scale(1.04);
+}
+.fotos .second-row div:nth-child(1){
+    background: url('../img/Galeria/3.jpg')no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 380px;
+}
+.fotos .second-row div:nth-child(2){
+    background: url('../img/Galeria/4.jpg')no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 380px;
+}
+/*------------------Fim da 2ª linha----------------------------*/
+/*------------------1ª linha----------------------------*/
+.fotos .third-row{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.fotos .third-row div{
+    background: url('../img/Galeria/5.jpg')no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 380px;
+    transition: .4s ease-in-out;
+}
+.fotos .third-row div:hover{
+    transform: scale(1.04);
+}
+/*------------------Fim da 1ª linha----------------------------*/
+
+/*---------------------RESPONSIVIDADE---------------------*/
+@media(max-width: 1150px){
+    /* Tudo que estiver dentro de .titulo-galeria terá um text-indent de 2%, como só tem textos mesmo*/
+    .titulo-galeria *{
+        text-indent: 2%;
+    }
+}
+
+@media(max-width: 680px){
+    .fotos .first-row{
+        grid-template-columns: 1fr;
+        grid-gap: 60px;
+    }
+
+    .fotos .second-row{
+        grid-template-columns: 1fr;
+        grid-gap: 60px;
+    }
+    .fotos div div{
+        border-radius: 0;
+    }
+}
+@media(max-width: 550px){
+    .fotos .first-row:hover div{
+        transform: none;
+    }
+    .fotos .second-row:hover div{
+        transform: none;
+    }
+    .fotos .third-row:hover div{
+        transform: none;
+    }
+}
+/*--------------------------------------------------------*/

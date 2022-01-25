@@ -1,0 +1,67 @@
+
+main .titulo-sobre h1{
+    color: #2F281E;
+    margin: 40px 0 5px;
+}
+main .titulo-sobre h1 + p{
+    color: #544837;
+    margin-bottom: 40px;
+}
+main > figure{
+    max-width: 1100px;
+}
+main > figure div{
+    background: url("../img/Sobre/paisagem-sobre.png");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    transform: scale(1);
+    padding: 30%;
+    max-width: 100%;
+}
+main > figure figcaption p{
+    margin: 20px 0;
+    color: #5D523D;
+}
+.texto{
+    margin: 40px 0px 0px;
+}
+.texto p{
+    text-align: justify;
+    line-height: 23px;
+    color: #2F281E;
+}
+.texto p + p{
+    margin-top: 20px;
+}
+main .texto + div{
+    margin: 60px 0 80px;
+    display: flex;
+}
+main .texto + div > img{
+    margin: auto;
+}
+main .screen{
+    background: url("../img/Sobre/Screen\ Shot\ 2020-07-16\ at\ 11.59.56.png")no-repeat;
+    max-height: 400px;
+    padding: 20%;
+    margin: auto;
+}
+
+/*---------------------RESPONSIVIDADE---------------------*/
+@media(max-width: 1150px){
+    /* Tudo que estiver dentro de .titulo-sobre terá uma indentação de 2%, como só tem textos mesmo*/
+    .titulo-sobre *{
+        text-indent: 2%;
+    }
+}
+@media(max-width: 800px){
+    main > figure figcaption p{
+       text-align: center;
+    }
+    .texto{
+        padding: 15px;
+    }
+}
+
+/*--------------------------------------------------------*/

@@ -1,0 +1,131 @@
+
+/*--------------Variaveis CSS-----------------*/
+:root{
+    --cor_principal: #333;
+    --cor_bonita: #080819;
+}
+/*------------------------------------------*/
+.main{
+    height: 100vh;
+    background: var(--cor_principal);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main h1{
+    color: #eee;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.main form{
+    border-radius: 4px;
+    padding: 40px 30px;
+    background: #fff;
+    width: 100%;
+    max-width: 1100px;
+}
+form .campos{
+    display: grid;
+    grid-template-columns: 1fr 40%;
+    grid-gap: 60px;
+}
+form .campos div{
+    width: 100%;
+}
+form .campos div label{
+    font-size: 1.3em;
+    color: var(--cor_principal);
+}
+form .campos .campo input{
+    width: 100%;
+    border: none;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    padding: 5px;
+    margin-top: 5px;
+    font-size: 1.2em;
+    color: var(--cor_bonita);
+    transition: .4s ease-in-out;
+}
+form .campos .second-column input{
+   margin-top: 3px;
+}
+form .campos div input:hover{
+    border-color: rgb(3, 70, 255);
+}
+form .campos .first-column .campo + .campo{
+    margin-top: 15px;
+}
+form .campos .second-column div + div{
+    margin-top: 15px;
+}
+form .btn{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+form .btn button{
+    padding: 10px;
+    font-size: 1.3em;
+    border: none;
+    border-radius: 4px;
+    color: #eee;
+    background: green;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.52);
+    cursor: pointer;
+    transition: .4s ease-in-out;
+}
+form .btn button:hover{
+    color: #fff;
+    background: rgb(2, 75, 2);
+}
+
+/* Sexo recebendo trantamento individual em alguns aspectos que são diferentes dos outros */
+form .campos .first-column .sexo{
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+form .campos .first-column .sexo div{
+    display: flex;
+    align-items: center;
+    max-width: 140px;
+}
+form .campos .first-column .sexo div + div{
+    margin-left: 2%;
+}
+form .campos .first-column .sexo label{
+    margin-right: 10px;
+    cursor: pointer;
+}
+form .campos .first-column .sexo input{
+    cursor: pointer;
+}
+
+/*---------------------------RESPONSIVIDADE---------------------------*/
+@media(max-width: 590px){
+    form .campos{
+        grid-template-columns: 1fr;
+    }
+    form .campos .campo input{
+        padding: 6px;
+    }
+    form .campos .first-column{
+        padding-bottom: 30px;
+        border-bottom: 1px solid #7a7a7a;
+        margin-bottom: -20px;
+    }
+    form .campos .first-column .sexo div + div{
+        margin-left: 0;
+    }
+}
+
+@media(max-width: 339px){
+    form .campos .first-column .sexo div + div{
+        margin-top: 10px;
+    }
+}
+/*--------------------------------------------------------------------*/

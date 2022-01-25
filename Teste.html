@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Requisições com fetch</title>
+</head>
+
+<body>
+
+    <h1>Requisições com fetch</h1>
+    <h2></h2>
+
+    <script>
+        const request = fetch('comentarios/busca_comentarios.php')
+            .then(resposta => resposta.json())
+            .then(dados => {
+                // Quando pegar os dados, tranformará em JSON e retornará os dados purificados na nova promise
+                document.querySelector('h2').innerHTML = dados[6].nome_usuario
+            })
+
+        const nome = 'Editoh Donatello'
+
+        // Mandando dados com fetch para o PHP
+
+       /* fetch('recebe_teste.php', {
+            method: "POST",
+            body: 'email='+'editoh13@gmail.com',
+            headers: {
+                'Content-Type': 'application/x-www-form-urlencoded'
+            }
+        }).then(respostaRequest => {
+
+            if (respostaRequest.status == 200) alert("Enviou com sucesso")
+            //It just works with one parametrer, and I don't know the reason, I'll study about this more profund and maybe later, no now or in that moment
+        })
+        */
+        console.log(request);
+    </script>
+</body>
+
+</html>

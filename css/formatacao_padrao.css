@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    outline: none;
+}
+.titulo-modal{
+    font-size: 1.4em;
+}
+.sms{
+    font-size: 1em;
+}

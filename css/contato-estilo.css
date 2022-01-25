@@ -1,0 +1,141 @@
+
+/*-------------------------Inicio do conteudo------------------------*/
+
+.conteudo{
+    display: grid;
+    grid-template-columns: 400px 500px;
+    grid-gap: 50px;
+    justify-content: center;
+    margin-bottom: 60px;
+    padding: 0 2%;
+}
+.conteudo h2{
+    margin: 30px 0 15px;
+    color: #333;
+}
+
+/*--------Inicio da informações-------*/
+.conteudo .informacoes ul{
+    margin: 0 0 0 10px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+.conteudo .informacoes ul li{
+    display: flex;
+    align-items: center;
+}
+.conteudo .informacoes ul li + li{
+    margin-top: 10px;
+}
+.conteudo .informacoes ul li p{
+    color: #333;
+    margin-left: 5px;
+}
+
+/*------------Fim da informações----------*/
+
+.conteudo .contacte{
+    max-width: 500px;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.conteudo .contacte div + div{
+    margin-top: 20px;
+}
+.conteudo .contacte div label{
+    display: block;
+    color: #333;
+    margin-bottom: 5px;
+}
+.conteudo .contacte div input, textarea{
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.342);
+    border: 1px solid #eee;
+    padding: 8px;
+    font-size: 1em;
+    width: 100%;
+    color: #333;
+    transition: all .4s ease-in-out;
+}
+.conteudo .contacte div:hover input{
+    border-color: #1779e981;
+}
+.conteudo .contacte div:hover textarea{
+    border-color: #1779e981;
+}
+.conteudo .contacte div.btn{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: -2%;
+}
+.conteudo .contacte div.btn button{
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.342);
+    background:  #0738A0;
+    color: #eee;
+    padding: 12px;
+    width: 100px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+}
+.conteudo .contacte div.btn button:hover{
+    background: #021f5f;
+}
+/*------------------Fim do conteudo------------------------*/
+
+/*---------------------RESPONSIVIDADE---------------------*/
+
+@media(max-width: 990px){
+    .conteudo{
+        grid-template-columns: 40% 1fr;
+        grid-gap: 2%;
+    }
+    .conteudo .informacoes ul{
+        margin: 0;
+    }
+}
+@media(max-width: 750px){
+    .conteudo{
+        grid-template-columns: 1fr;
+    }
+    .conteudo .informacoes{
+        justify-self: center;
+        width: 100%;
+    }
+    .conteudo .informacoes h2{
+        text-align: center;
+    }
+    .conteudo .informacoes ul{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .conteudo .informacoes ul li + li{
+        list-style: georgian;
+        margin-left: 3%;
+        margin-top: 0;
+    }
+    .conteudo .contacte{
+        justify-self: center;
+        width: 100%;
+    }
+    
+}
+@media(max-width: 600px){
+    .conteudo .informacoes ul{
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 15%;
+    }
+    .conteudo .informacoes ul li + li{
+        margin-left: 0;
+        margin-top: 10px;
+    }
+}
+
+/*--------------------------------------------------------*/

@@ -1,0 +1,99 @@
+/*-------------------Footer(rodapé)----------------------------*/
+footer{
+    max-width: 1100px;
+    margin: auto;
+}
+footer .topicos{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    margin: 50px auto;
+}
+footer .topicos div:first-child p{
+    margin-top: 14px;
+    text-align: justify;
+    line-height: 30px;
+    color: #444;
+    max-width: 450px;
+}
+footer .topicos div + div{
+    margin-left: 60px;
+}
+footer .topicos div ul{
+    list-style: none;
+}
+footer .topicos div ul li{
+    margin-top: 20px;
+}
+footer .topicos div ul li p{
+    color: #544837;
+}
+
+footer > div:last-child hr{
+    height: 2px;
+    background: rgb(7, 55, 160);
+}
+footer > div:last-child > p{
+    color: #5D523D;
+    padding: 15px;
+    text-align: center;
+}
+/*----------------Fim do footer---------------------*/
+
+/*---------------------RESPONSIVIDADE---------------------*/
+
+@media(max-width: 800px){
+    footer .topicos{
+        flex-wrap: wrap;
+        margin: 50px auto;
+        padding: 20px auto;
+    }
+    footer .topicos div:first-child{
+        margin-bottom: 30px;
+    }
+}
+@media(max-width: 636px){
+    footer .topicos div:nth-child(2){
+        margin-left: 5%;
+        margin-right: 30%;
+    }
+    footer .topicos div:last-child{
+        margin-top: 40px;
+        margin-left: 0;
+    }
+}
+@media(max-width: 513px){
+    footer .topicos div:nth-child(2){
+        margin-left: 3%;
+        margin-right: 20%;
+    }
+}
+@media(max-width: 439px){
+    footer .topicos div:nth-child(2){
+        margin-left: 1%;
+        margin-right: 17%;
+    }
+}
+@media(max-width: 414px){
+    footer .topicos div:nth-child(2){
+        margin-left: 1%;
+        margin-right: 14%;
+    }
+}
+@media(max-width: 400px){
+    footer .topicos{
+        flex-direction: column;
+    }
+    footer .topicos div:nth-child(3){
+        margin-top: 40px;
+        margin-left: 0;
+    }
+    footer .topicos div{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    footer .topicos div:last-child{
+        margin-top: 40px;
+    }
+}
+/*--------------------------------------------------------*/

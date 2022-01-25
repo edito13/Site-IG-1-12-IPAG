@@ -1,0 +1,100 @@
+
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #333;
+    height: 100vh;
+}
+.main h1{
+    text-align: center;
+    color: #eee;
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+form{
+    height: 280px;
+    width: 96%;
+    max-width: 500px;
+    border-radius: 5px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+form div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form div + div{
+    margin-top: 35px;
+}
+form div label{
+    font-size: 1.5em;
+    color: #333;
+    margin-right: 15px;
+}
+form div input{
+    border: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 9px 6px;
+    width: 60%;
+}
+form div button{
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.342);
+    width: 100px;
+    color: #eee;
+    background: #0738A0;
+    border: none;
+    border-radius: 5px;
+    padding: 12px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: .4s ease-in-out;
+}
+form div button:hover{
+    background: rgb(2, 31, 95);
+}
+.main > a{
+    text-align: center;
+    margin-top: 20px;
+    color: rgb(10, 223, 10);
+    text-decoration: none;
+    animation: efeito .4s alternate ease-in-out infinite 1.5s;
+}
+.main > a:hover{
+    animation: none;
+}
+
+@keyframes efeito{
+    from{
+        transform: scale(1);
+    }to{
+        transform: scale(1.1);
+    }
+}
+
+/*----------------------RESPONSIVIDADE----------------------*/
+@media(max-width: 500px){
+    form{
+        padding: 180px 0px;
+    }
+    form div{
+        flex-direction: column;
+    }
+    form div input{
+        width: 80%;
+        padding: 11px 6px;
+    }
+    form div label{
+        align-self: flex-start;
+        margin-left: 10%;
+        margin-bottom: 5px;
+    }
+}
+/*-------------------------------------------------------------*/
